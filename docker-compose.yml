@@ -1,11 +1,11 @@
 services:
   api:
     image: hashicorp/http-echo:latest
-    command: ["-text=Monitoring Service Active", "-listen=:5678"]
+    command: ["-text=Monitoring Service Active", "-listen=:8080"]
     networks:
       - monitoring
  
-  nginx:
+  proxy:
     image: nginx:alpine
     ports:
       - "80:80"
