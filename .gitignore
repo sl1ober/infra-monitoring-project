@@ -1,0 +1,23 @@
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+.DS_Store
+
+# Build artifacts
+build/
+dist/
+coverage/
+
+# Environment variabls and secrets
+.env
+.env.*
+!.env.example
+
+# Packet captures
+*.pcap
+*.pcapng
